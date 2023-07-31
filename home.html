@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T_WORK SYSTEM | Software Company</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet" />
+
+    <style>
+      .navbar-brand {
+        height: 100px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .navbar-brand img {
+        max-width: 30%;
+        max-height: auto;
+      }
+
+      .nav-link.active {
+        background-color: #106bd3;
+        color: aliceblue;
+      }
+
+      ul li a {
+        font-size: 20px;
+      }
+
+      body {
+        font-family: "Signika";
+      }
+
+      .input-group {
+        margin-bottom: 1rem;
+      }
+
+      .input-group-text {
+        padding: 0.375rem 0.75rem;
+        border-radius: 0.25rem;
+      }
+
+      .form-control {
+        border-radius: 0.25rem;
+      }
+
+      .form-text {
+        margin-top: 0.25rem;
+      }
+
+      .bg-image-pricing-table {
+        background-image: url("images/pexels-miguel-a-padrinan-1591060-scaled.jpg");
+        background-size: cover;
+      }
+
+      .table th {
+        border-right-color: #344153;
+        border-left-color: #344153;
+        border-right-width: 13px;
+        border-left-width: 13px;
+      }
+
+      .table td {
+        border-right-color: #344153;
+        border-left-color: #344153;
+        border-right-width: 13px;
+        border-left-width: 13px;
+      }
+
+      .hrMoreFeatures {
+        border-bottom: 8px dashed #106bd3;
+      }
+
+      .bg-image-aboutUs {
+        background-image: url("images/pexels-fauxels-3184454-scaled.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .bg-image-blog-head {
+        background-image: url("images/pexels-pixabay-373076-scaled.jpg");
+        background-position: bottom;
+      }
+
+      .blog-card {
+        height: 600px;
+      }
+
+      .bg-image-AppAds {
+        background-image: url("images/app-bg.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      h5 {
+        background-color: #106bd3;
+        padding: 15px;
+        font-weight: 900;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <header>
+    <div class="bg-light" style="border-bottom: 0.1px solid gray; padding-top: 10px; padding-bottom: 2px">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="tel:09965088114" class="text-black">09965088114 | </a>
+            <a href="mailto:sales@tworksystem.com" class="text-black">sales@tworksystem.com</a>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-center" style="padding-right: 0px; padding-left: 450px">
+              <a href="https://www.facebook.com/tworksystem"
+                ><i class="bi bi-facebook" style="padding-right: 20px; font-size: 25px"> </i
+              ></a>
+              <a href="https://www.youtube.com/@tworksystem"
+                ><i class="bi bi-youtube" style="color: red; padding-right: 20px; font-size: 25px"> </i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/t-work-system-logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse" style="padding-left: 200px">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link active text-white" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <body>
+    <h1 class="fw-bold text-center" style="color: #106bd3">SEARCH YOUR DOMAIN NAME</h1>
+
+    <div class="container" style="padding-top: 20px; padding-bottom: 20px">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">
+              <i
+                class="bi bi-search"
+                style="font-size: 20px; color: #106bd3; border-color: #106bd3"
+              ></i>
+            </span>
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Find Your Perfect Domain Name ..... "
+              aria-label="Search"
+              aria-describedby="basic-addon1"
+              style="border-color: #106bd3; padding: 12px"
+            />
+          </div>
+        </div>
+        <div class="col-md-1">
+          <select class="form-select" id="mySelect" style="font-size: 20px; width: 90px; padding: 10px">
+            <option value="1">.com</option>
+            <option value="2">.org</option>
+            <option value="3">.info</option>
+            <option value="4">.edu</option>
+            <option value="4">.net</option>
+          </select>
+        </div>
+        <div class="col-md-1">
+          <button
+            class="btn btn-primary mx-auto"
+            style="
+              font-size: 20px;
+              width: 85px;
+              padding: 10px;
+              margin-left: 200px;
+              border-bottom-right-radius: 15px;
+              border-top-left-radius: 15px;
+            "
+          >
+            <a href="blog.html" class="text-white" style="text-decoration: none">Check</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto text-center text-white fw-bold">
+      <h5>မြန်မာငွေ ၂ သိန်း ၉ သောင်းကျပ်တည်းဖြင့် Website တစ်ခု ပိုင်ဆိုင်နိုင်ပြီဆိုတာ သင်သိပါသလား။</h5>
+      <h5>Hosting Package များကိုလည်း 2GB ကို 20,000 Ks / Month မှ စတင်၍ ရွေးချယ် ဝယ်ယူနိုင်ပါသည်။</h5>
+      <h5>Digital Marketing Campaign Services များကိုလည်း ဈေးနှုန်းသက်သာစွာဖြင့် တာဝန်ယူလက်ခံဆောင်ရွက်ပေးနေပါပြီ။</h5>
+    </div>
+
+    <h1 class="text-center fw-bold" style="padding-top: 50px">
+      OUR
+      <label for="h1title" class="fw-bold" style="color: #106bd3">SERVICES</label>
+    </h1>
+    <hr class="mx-auto" style="color: #106bd3; width: 200px; height: 5px" />
+    <hr class="mx-auto" style="margin-top: -10px; color: #106bd3; width: 200px; height: 5px" />
+
+    <div class="container" style="padding-top: 40px; padding-bottom: 50px">
+      <div class="row">
+        <div class="col-md-4">
+          <i
+            class="bi bi-wordpress"
+            style="color: #344153; display: flex; justify-content: center; font-size: 80px"
+          ></i>
+          <p class="text-center fw-bold" style="color: #106bd3; padding-top: 20px; font-size: 20px">
+            Website Develpoment
+          </p>
+          <p class="text-center fw-bold">
+            E-Commerce Feature များ ပါဝင်သော Online Marketing ဖန်တီးလိုသူများအတွက် အဆင်သင့် အသုံးပြုနိုင်သည်အထိ
+            Development လုပ်ပေးမည်ဖြစ်ပါသည်။ Web Page 5 Pages ပါဝင်ပြီး Product အခု 20 အခမဲ့ ထည့်သွင်းပေးသွားမည်
+            ဖြစ်ပါသည်။ လိုအပ်သော Configuration Tool များကိုလည်း တစ်ပါတည်း တပ်ဆင်ပေးပြီး ဖြစ်ပါသည်။
+          </p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-server" style="color: #344153; display: flex; justify-content: center; font-size: 80px"></i>
+          <p class="text-center fw-bold" style="color: #106bd3; padding-top: 20px; font-size: 20px">Managed Hosting</p>
+          <p class="text-center fw-bold">
+            မိမိကြိုက်နှစ်သက်ရာ Hosting Plan များကို 1GB မှစ၍ စိတ်ကြိုက် ရွေးချယ်ဝယ်ယူနိုင်ပါသည်။ Domain Name
+            လုံခြုံမှုရှိစေရန် Security တိုးမြှင့်ပေးပါသည်။
+          </p>
+        </div>
+        <div class="col-md-4">
+          <i
+            class="bi bi-code-square"
+            style="color: #344153; display: flex; justify-content: center; font-size: 80px"
+          ></i>
+          <p class="text-center fw-bold" style="color: #106bd3; padding-top: 20px; font-size: 20px">
+            Application Development
+          </p>
+          <p class="text-center fw-bold">
+            Data များကို စိတ်တိုင်းကျ အလွယ်တကူ ပြင်နိုင်သော Lifetime အသုံးပြုနိုင်သော Application များကိုလည်း iOS,
+            Android Version ၂ မျိုးဖြင့် Development ပြုလုပ်ပေးပါသည်။
+          </p>
+        </div>
+        <button
+          class="btn btn-primary mx-auto"
+          style="
+            font-size: 20px;
+            width: 250px;
+            padding: 10px 20px 10px 20px;
+            margin-top: 30px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+          "
+        >
+          <a href="services.html" class="text-white fw-bold" style="text-decoration: none">For More Services</a>
+          <i class="bi bi-box-arrow-up-right" style="padding-left: 10px"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-image-pricing-table text-center" style="padding-top: 50px; padding-bottom: 70px">
+      <div class="container">
+        <h1 class="text-white" style="padding-bottom: 30px; font-size: 50px">CHOOSE YOUR PLAN</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <table class="table table-bordered" style="background-color: #ffffff; color: #344153">
+              <thead>
+                <tr style="border-top-color: #344153; border-top-width: 13px">
+                  <th style="font-size: 40px; padding-top: 20px; padding-bottom: 20px" scope="col">T-Work 2 GB</th>
+                </tr>
+                <tr style="background-color: #106bd3; color: #ffffff">
+                  <th scope="col" style="font-size: 30px; padding-top: 20px; padding-bottom: 20px">
+                    20,000 Kyats / Month
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2 GB RAM</td>
+                </tr>
+                <tr>
+                  <td>40 GB SSD Storage</td>
+                </tr>
+                <tr>
+                  <td>Shared CPU</td>
+                </tr>
+                <tr>
+                  <td>Unlimited Email Account</td>
+                </tr>
+                <tr>
+                  <td>Outbound Spams Filtering</td>
+                </tr>
+                <tr>
+                  <td>2 Domain</td>
+                </tr>
+                <tr>
+                  <td>2 Databases</td>
+                </tr>
+                <tr>
+                  <td>Secured by Imunify 360</td>
+                </tr>
+                <tr>
+                  <td>Powered by CloudLinux and Plesk</td>
+                </tr>
+                <tr>
+                  <td style="border-bottom-color: #ffffff">SSL DV Certificate</td>
+                </tr>
+                <tr style="border-bottom-color: #344153; border-bottom-width: 13px">
+                  <td style="padding-bottom: 20px">
+                    <button
+                      class="btn btn-primary bi bi-cart-fill icon-only"
+                      style="
+                        font-size: 20px;
+                        width: 250px;
+                        padding: 10px 20px 10px 20px;
+                        margin-top: 10px;
+                        margin-left: 10px;
+                      "
+                    >
+                      Get it Now
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-4">
+            <table class="table table-bordered" style="background-color: #ffffff; color: #344153">
+              <thead>
+                <tr style="border-top-color: #344153; border-top-width: 13px">
+                  <th style="font-size: 40px; padding-top: 20px; padding-bottom: 20px" scope="col">T-Work 4 GB</th>
+                </tr>
+                <tr style="background-color: #106bd3; color: #ffffff">
+                  <th scope="col" style="font-size: 30px; padding-top: 20px; padding-bottom: 20px">
+                    40,000 Kyats / Month
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>4 GB RAM</td>
+                </tr>
+                <tr>
+                  <td>80 GB SSD Storage</td>
+                </tr>
+                <tr>
+                  <td>Shared CPU</td>
+                </tr>
+                <tr>
+                  <td>Unlimited Email Account</td>
+                </tr>
+                <tr>
+                  <td>Outbound Spams Filtering</td>
+                </tr>
+                <tr>
+                  <td>4 Domain</td>
+                </tr>
+                <tr>
+                  <td>4 Databases</td>
+                </tr>
+                <tr>
+                  <td>Secured by Imunify 360</td>
+                </tr>
+                <tr>
+                  <td>Powered by CloudLinux and Plesk</td>
+                </tr>
+                <tr>
+                  <td style="border-bottom-color: #ffffff">SSL DV Certificate</td>
+                </tr>
+                <tr style="border-bottom-color: #344153; border-bottom-width: 13px">
+                  <td style="padding-bottom: 20px">
+                    <button
+                      class="btn btn-primary bi bi-cart-fill icon-only"
+                      style="
+                        font-size: 20px;
+                        width: 250px;
+                        padding: 10px 20px 10px 20px;
+                        margin-top: 10px;
+                        margin-left: 10px;
+                      "
+                    >
+                      Get it Now
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-4">
+            <table class="table table-bordered" style="background-color: #ffffff; color: #344153">
+              <thead>
+                <tr style="border-top-color: #344153; border-top-width: 13px">
+                  <th style="font-size: 40px; padding-top: 20px; padding-bottom: 20px" scope="col">T-Work 8 GB</th>
+                </tr>
+                <tr style="background-color: #106bd3; color: #ffffff">
+                  <th scope="col" style="font-size: 30px; padding-top: 20px; padding-bottom: 20px">
+                    80,000 Kyats / Month
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>8 GB RAM</td>
+                </tr>
+                <tr>
+                  <td>160 GB SSD Storage</td>
+                </tr>
+                <tr>
+                  <td>Shared CPU</td>
+                </tr>
+                <tr>
+                  <td>Unlimited Email Account</td>
+                </tr>
+                <tr>
+                  <td>Outbound Spams Filtering</td>
+                </tr>
+                <tr>
+                  <td>8 Domain</td>
+                </tr>
+                <tr>
+                  <td>8 Databases</td>
+                </tr>
+                <tr>
+                  <td>Secured by Imunify 360</td>
+                </tr>
+                <tr>
+                  <td>Powered by CloudLinux and Plesk</td>
+                </tr>
+                <tr>
+                  <td style="border-bottom-color: #ffffff">SSL DV Certificate</td>
+                </tr>
+                <tr style="border-bottom-color: #344153; border-bottom-width: 13px">
+                  <td style="padding-bottom: 20px">
+                    <button
+                      class="btn btn-primary bi bi-cart-fill icon-only"
+                      style="
+                        font-size: 20px;
+                        width: 250px;
+                        padding: 10px 20px 10px 20px;
+                        margin-top: 10px;
+                        margin-left: 10px;
+                      "
+                    >
+                      Get it Now
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="text-center fw-bold" style="padding-top: 50px">
+      MORE
+      <label for="h1title" style="color: #106bd3">FEATURES</label>
+    </h1>
+    <hr class="mx-auto hrMoreFeatures" style="color: #ffffff; width: 400px; height: 8px" />
+
+    <div class="container" style="padding-top: 30px; padding-bottom: 50px">
+      <div class="row">
+        <div class="col-md-4">
+          <i
+            class="bi bi-envelope-at"
+            style="color: #106bd3; display: flex; justify-content: center; font-size: 80px"
+          ></i>
+          <p class="text-center fw-bold" style="color: #106bd3; padding-top: 20px; font-size: 20px">
+            Email Account(Unlimited)
+          </p>
+          <p class="text-center fw-bold">လုပ်ငန်းသုံး Email Account များကိုလည်း အကန့်အသတ်မရှိ ဖန်တီးပေးခြင်း။</p>
+        </div>
+        <div class="col-md-4">
+          <i
+            class="bi bi-cloud-fog2-fill"
+            style="color: #106bd3; display: flex; justify-content: center; font-size: 80px"
+          ></i>
+          <p class="text-center fw-bold" style="color: #106bd3; padding-top: 20px; font-size: 20px">
+            Power by CloudLinux & Plesk
+          </p>
+          <p class="text-center fw-bold">
+            Hosting နှင့် Website Data များကို ထိန်းသိမ်းရန်အတွက် လွယ်ကူပြီး စိတ်ချရတဲ့ CloudLinux နှင့် Plesk များကို
+            အသုံးပြုပေးထားပါသည်။
+          </p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-globe2" style="color: #106bd3; display: flex; justify-content: center; font-size: 80px"></i>
+          <p class="text-center fw-bold" style="color: #106bd3; padding-top: 20px; font-size: 20px">
+            Secured by Immunify 360
+          </p>
+          <p class="text-center fw-bold">
+            Web Server အား Digital Attack များမှ ကာကွယ်ရန် AI နည်းပညာအသုံးပြုထားသော Immunify360 အသုံးပြုထားခြင်း။
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="padding-top: 70px">
+        <div class="col-md-4">
+          <i class="bi bi-cart4" style="color: #106bd3; display: flex; justify-content: center; font-size: 80px"></i>
+          <p class="text-center fw-bold" style="color: #106bd3; padding-top: 20px; font-size: 20px">E - Commerce</p>
+          <p class="text-center fw-bold">
+            Online ပေါ်တွင် ကုန်ပစ္စည်းရောင်းချလိုသူများအတွက် Online Store ပြုလုပ်ပေးခြင်း။
+          </p>
+        </div>
+        <div class="col-md-4">
+          <i
+            class="bi bi-file-lock2"
+            style="color: #106bd3; display: flex; justify-content: center; font-size: 80px"
+          ></i>
+          <p class="text-center fw-bold" style="color: #106bd3; padding-top: 20px; font-size: 20px">
+            Free SSL DV Certificate
+          </p>
+          <p class="text-center fw-bold">
+            Domain-Validation Certificate ပါဝင်သည့်အတွက် Customer ဘက်မှ အပြည့်အဝ ယုံကြည်စိတ်ချနိုင်ခြင်း။
+          </p>
+        </div>
+        <div class="col-md-4">
+          <i
+            class="bi bi-share-fill"
+            style="color: #106bd3; display: flex; justify-content: center; font-size: 80px"
+          ></i>
+          <p class="text-center fw-bold" style="color: #106bd3; padding-top: 20px; font-size: 20px">Shared CPU</p>
+          <p class="text-center fw-bold">
+            Hosting နှင့် Website Data များကို ထိန်သိမ်းရန်အတွက် လွယ်ကူပြီး စိတ်ချရတဲ့ CloudLinux နှင့် Plesk များကို
+            အသုံးပြုထားပါသည်။
+          </p>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 70px">
+        <div class="col-md-12">
+          <i
+            class="bi bi-graph-up-arrow"
+            style="color: #106bd3; display: flex; justify-content: center; font-size: 80px"
+          ></i>
+          <p class="text-center fw-bold" style="color: #106bd3; padding-top: 20px; font-size: 20px">Google Analytics</p>
+          <p class="text-center fw-bold">
+            မိမိ Website ကို စိတ်ဝင်တစား ဝင်ရောက်ကြည့်ရှုသော <br />
+            Customer များ၏ အချက်အလက်များ ရရှိနိုင်ခြင်း။
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-image-aboutUs text-center fw-bold mix-blue-white" style="padding-top: 50px; padding-bottom: 50px">
+      <div class="overlay" style="padding-top: 50px; height: 300px; background-color: black; opacity: 0.5">
+        <p class="text-white" style="font-size: 30px">
+          အောင်မြင်လိုသော ကိုယ်ပိုင်စီးပွားရေး လုပ်ငန်းတိုင်းအတွက် IT နှင့်ပတ်သက်သည့် လိုအပ်ချက်များကို <br />
+          ဝန်ဆောင်မှုပေးနေသော Software Company ဖြစ်သည်။
+        </p>
+        <hr class="mx-auto" style="color: #ffffff; width: 1000px; height: 5px" />
+        <hr class="mx-auto" style="margin-top: -10px; color: #ffffff; width: 1000px; height: 5px" />
+        <p class="text-white" style="font-size: 30px">
+          သင့်လိုအပ်ချက်များနှင့်အညီ စိတ်ကျေနပ်မှု အပြည့်အဝရရှိသည်အထိ အသေးစိတ်ညှိနှိုင်း တိုင်ပင်ဆွေးနွေးနိုင်ပါသည်။
+        </p>
+      </div>
+    </div>
+
+    <h1 class="text-center fw-bold" style="padding-top: 60px; margin-bottom: 0">
+      Special Tools at
+      <label for="h1title" style="color: #106bd3">T-WORK SYSTEM</label>
+    </h1>
+    <hr class="mx-auto" style="color: #000000; width: 300px; height: 5px" />
+    <hr class="mx-auto" style="margin-top: -10px; color: #000000; width: 300px; height: 5px" />
+
+    <div class="container" style="padding-top: 10px; padding-bottom: 60px">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="images/wordpress_PNG50.png" style="width: 300px" alt="WORDPRESS" />
+        </div>
+        <div class="col-md-3">
+          <img src="images/cloudLinux.png" style="width: 300px" alt="WORDPRESS" />
+        </div>
+        <div class="col-md-3">
+          <img src="images/plesk.png" style="width: 300px" alt="WORDPRESS" />
+        </div>
+        <div class="col-md-3">
+          <img src="images/beaverBuilderTransparent.png" style="width: 300px" alt="WORDPRESS" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-image-AppAds">
+      <div class="container text-center fw-bold" style="padding-top: 50px">
+        <div class="row">
+          <div class="col-md-6" style="padding-top: 100px">
+            <h1 class="text-white" style="font-size: 50px; line-height: 75px">
+              An App That Helps <br />
+              Change Your Business
+            </h1>
+            <p class="text-white" style="line-height: 50px">
+              Our Catalogue Demo Appliction Out Now. Download on the Google Play Store.
+            </p>
+            <img src="images/app_store_apple.png" alt="App Store" />
+          </div>
+          <div class="col-md-6">
+            <img src="images/iphone.png" alt="App Store" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="text-center fw-bold" style="margin-top: 50px; margin-bottom: 10px">
+      Latest
+      <label for="h1title" style="color: #106bd3">Blogs</label>
+    </h1>
+    <hr class="mx-auto" style="color: #000000; width: 250px; height: 5px" />
+    <hr class="mx-auto" style="margin-top: -10px; margin-bottom: 50px; color: #000000; width: 250px; height: 5px" />
+
+    <div class="bg-image bg-image-blog-head" style="margin-top: 30px">
+      <div class="container" style="padding-top: 50px">
+        <div class="row" style="padding-bottom: 50px">
+          <div class="col-md-4">
+            <div class="card blog-card">
+              <img class="card-img-top" src="images/twork-hosting-plan.png" alt="T-WORK HOSTING PLAN" />
+              <div class="card-body">
+                <article class="blog-post">
+                  <h2 class="blog-post-title card-title" style="color: #106bd3">T-WORK HOSTING PLAN</h2>
+                  <p class="blog-post-meta card-text">
+                    By <a href="https://www.tworksystem.com">T-WORK SYSTEM</a> |
+                    <time datetime="2023-07-26"> Jun 2, 2021</time>
+                  </p>
+                  <p>
+                    သင့် ကိုယ်ပိုင် Website များ လွှင့်တင်ရန် လုံခြုံစိတ်ချရတဲ့ နေရာ တစ်ခုရှာနေပါသလား..? ၂၀၁၅ ခုနှစ်မှ
+                    စတင်ခဲ့ပြီး (၅) နှစ်တိုင်တိုင် ရပ်တည်ခဲ့သည့် T-Work System မှ -လုံခြုံမှုမြင့်မားသော Virtual Private
+                    Server များ – Web Server …
+                  </p>
+                </article>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="background-color: transparent; border: 0; color: #106bd3; padding-left: 0"
+                  >Read More&nbsp;&nbsp;&raquo;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card blog-card">
+              <img class="card-img-top" src="images/Hosting_Plan.png" alt="Card image cap" />
+              <div class="card-body">
+                <article class="blog-post">
+                  <h2 class="blog-post-title card-title" style="color: #106bd3">T-WORK HOSTING PLAN</h2>
+                  <p class="blog-post-meta card-text">
+                    By <a href="https://www.tworksystem.com">T-WORK SYSTEM</a> |
+                    <time datetime="2023-07-26"> Jun 2, 2021</time>
+                  </p>
+                  <p>
+                    Online Shopping လုပ်ကိုင်နေသူလား..? လူကြီးမင်း Online Business အတွက် ကိုယ်ပိုင် Website
+                    ပိုင်ဆိုင်ထားပြီလား..?နိုင်ငံတော်အစိုးရ ထုတ်ပြန်ချက်အရ လူကြီးမင်း Online Business မှာ Website
+                    တခုရှိကို ရှိရတော့မှာပါဒီအတွက် ဘာတွေများ ပြင်ဆင်ထားပြီးပြီလဲ..? မဖြစ်မနေ ကိုယ်ပိုင် Website တွေကို
+                    ပိုင်ဆိုင်ရမယ်ဆိုပေမယ့်…
+                  </p>
+                </article>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="background-color: transparent; border: 0; color: #106bd3; padding-left: 0"
+                  >Read More&nbsp;&nbsp;&raquo;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card blog-card">
+              <img class="card-img-top" src="images/T_WORKHosting_Plan.png" alt="Card image cap" />
+              <div class="card-body">
+                <article class="blog-post">
+                  <h2 class="blog-post-title card-title" style="color: #106bd3">Hosting Plan</h2>
+                  <p class="blog-post-meta card-text">
+                    By <a href="https://www.tworksystem.com">T-WORK SYSTEM</a> |
+                    <time datetime="2023-07-26"> Jun 2, 2021</time>
+                  </p>
+                  <p>
+                    တလ တသောင်းကျပ် အသုံးပြုရုံဖြင့် T-WORK Hosting 1GB plan ရရှိမှာ ဖြစ်ပြီး 20GB SSD Storage လည်း
+                    ရရှိမှာပါနော် Email Account လည်း အကန့်အသတ်မရှိ ဖန်တီးနိုင်ပါပြီDatabase 2 ခု
+                    တည်ဆောက်ထားနိုင်ပြီးSecurity ပိုင်းတွင်လည်း Secured by…
+                  </p>
+                </article>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="background-color: transparent; border: 0; color: #106bd3; padding-left: 0"
+                  >Read More&nbsp;&nbsp;&raquo;</a
+                >
+              </div>
+            </div>
+          </div>
+          <button
+            class="btn btn-primary mx-auto"
+            style="
+              font-size: 20px;
+              width: 250px;
+              padding: 10px;
+              margin-top: 50px;
+              border-bottom-right-radius: 20px;
+              border-top-left-radius: 20px;
+            "
+          >
+            <a href="blog.html" class="text-white fw-bold" style="text-decoration: none">See all News</a>
+            <i class="bi bi-box-arrow-up-right" style="padding-left: 10px"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: #106bd3" class="text-white">
+      <div class="container" style="padding-top: 50px; padding-bottom: 50px">
+        <div class="row">
+          <div class="col-md-3">
+            <i class="bi bi-headset" style="display: flex; justify-content: center; font-size: 80px"></i>
+            <p class="text-center fw-bold" style="padding-top: 20px; font-size: 20px">24/7 Customer Support</p>
+          </div>
+          <div class="col-md-3">
+            <i class="bi bi-envelope-open-fill" style="display: flex; justify-content: center; font-size: 80px"></i>
+            <p class="text-center fw-bold" style="padding-top: 20px; font-size: 20px">
+              <a href="mailto:office@tworksystem.com" class="text-white">office@tworksystem.com</a>
+            </p>
+          </div>
+
+          <div class="col-md-3">
+            <i class="bi bi-chat-fill" style="display: flex; justify-content: center; font-size: 80px"></i>
+            <p class="text-center fw-bold" style="padding-top: 20px; font-size: 20px">
+              <a href="https://m.me/tworksystem" class="text-white">Open Support</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <i class="bi bi-telephone-inbound-fill" style="display: flex; justify-content: center; font-size: 80px"></i>
+            <p class="text-center fw-bold" style="padding-top: 20px; font-size: 20px">
+              <a href="tel:09965088114" class="text-white">(+959) 965088114</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer class="footer">
+    <div style="background-color: #344153" class="text-white">
+      <div class="container" style="padding-top: 50px; padding-bottom: 50px">
+        <div class="row">
+          <div class="col-md-4">
+            <h4 style="padding-bottom: 20px">Get In Touch!</h4>
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            <p>Phone: <a href="tel:09965088114">+959-965-088-114</a></p>
+            <p>Address: No (14/1), 79th Street, between 39th Street & 40th Street, Mandalay</p>
+          </div>
+          <div class="col-md-4">
+            <h4 style="padding-bottom: 20px">Additional Resources</h4>
+            <ul>
+              <li><a href="#">FAQ </a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms and conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 style="padding-bottom: 20px">About Us</h4>
+            <p>Since 2010</p>
+            <p>
+              We are started,as a Local Business, Computer Sales & Service(Laptop and Desktop) and Thin Client Solution.
+            </p>
+            <p>In 2015, We Started Web-Hosting Services and also Website Development Services.</p>
+            <p>
+              <a href="aboutUs.html">Read More >></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div
+    class="text-center footer-copyright text-white fw-normal"
+    style="background-color: #106bd3; padding-top: 10px; padding-bottom: 10px; font-size: 14px"
+  >
+    © 2017 T-WORK SYSTEM. All Rights Reserved.
+  </div>
+</html>
